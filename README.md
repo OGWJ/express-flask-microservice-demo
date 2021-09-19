@@ -51,13 +51,13 @@ To get a local copy up and running follow these simple steps.
    git clone https://github.com/OGWJ/express-flask-microservice-demo.git
    ```
 2. Check Docker engine is running\*
-3. In another terminal start your micro-service application
+3. Start your micro-service application
     ```sh
     cd express-flask-microservice-demo && docker-compose up
     ```
-4. In your browser (or on the command line) visit localhost:3000 to get predictions for your image.
+4. Visit localhost:3000 to get predictions for your image.
 
-5. Try swapping out the image in the express-requests/data directory.
+5. Try swapping out the image.jpeg (for another named image.jpeg) in the express-requests directory.
 
 6. Finished? Ctrl+C in your application terminal and clean up your system with
     ```sh
