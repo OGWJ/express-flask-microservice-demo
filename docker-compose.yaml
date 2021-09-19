@@ -1,0 +1,27 @@
+services:
+  flask-classifier:
+    build: flask-classifier
+    command: python server.py
+    volumes:
+      - ./flask-classifier:/usr/app/
+    ports:
+      - "5000:5000"
+    expose:
+      - 5000 
+    environment:
+      - PORT=5000
+
+  express-requests:
+    build: express-requests
+    command: node index.js
+    volumes:
+      - ./express-requests:/usr/app
+      - /usr/app/node_modules
+    ports:
+      - "3000:3000"
+    expose:
+      - 3000
+    depends_on:
+      - flask-classifier
+    environment:
+      - PORT=3000
