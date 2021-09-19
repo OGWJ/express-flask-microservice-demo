@@ -50,7 +50,7 @@ To get a local copy up and running follow these simple steps.
    ```sh
    git clone https://github.com/OGWJ/express-flask-microservice-demo.git
    ```
-2. Check docker daemon is running (this will depend on your OS- see documentation linked in Prerequisites)
+2. Check Docker engine is running\*
 3. In another terminal start your micro-service application
     ```sh
     cd express-flask-microservice-demo && docker-compose up
@@ -63,12 +63,14 @@ To get a local copy up and running follow these simple steps.
     ```sh
     docker-compose down --rmi all --volumes --remove-orphans
     ```
-7. Stop Docker with Ctrl+C in your Docker daemon terminal
+7. Stop Docker\*
 
 8. Remove the local repository from your system
     ```sh
     cd .. && rm -rf express-flask-microservice-demo
     ```
+
+* (\* this will depend on your OS- see documentation linked in Prerequisites)
 
 <!-- LICENSE -->
 ## License
