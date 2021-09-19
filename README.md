@@ -66,9 +66,9 @@ To get a local copy up and running follow these simple steps.
 7. Stop Docker with Ctrl+C in your Docker daemon terminal
 
 8. Remove the local repository from your system
-  ```sh
-  cd .. && rm -rf express-flask-microservice-demo
-  ```
+    ```sh
+    cd .. && rm -rf express-flask-microservice-demo
+    ```
 
 <!-- LICENSE -->
 ## License
